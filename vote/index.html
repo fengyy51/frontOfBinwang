@@ -45,8 +45,21 @@
     <script type="text/javascript" src="../util/js/publicAttr.js?time=2017081715"></script>
     <script type="text/javascript" src="../util/js/global.js?time=2017081715"></script>
     <script type="text/javascript" src="../util/js/alert.js?time=2017081715"></script>
+    <script type="text/javascript" src="../util/js/weChatId.js"></script>
     <script type="text/javascript">
     $(function() {
+        // 授权
+        var openId='yy';
+        var options={
+            url:urlYuming+"/vote/index",
+            urlServerauth:urlServer+"/user/do-auth",
+            APPID:APPIDall      
+        };
+        function callbackA(id) {                
+            openId=id; 
+            // console.log(id);
+        }
+        getWeChatId(options,callbackA);    
         var countff = getCookie("countff");
         if (countff == null || countff == "null") {
             countff = 1;
@@ -151,6 +164,7 @@
             }
             console.log(str);
             str=str+'@@@'+curTime;
+            str=str+'@@@'+openId;
             console.log(str);
             if (num == 5) {
                 // str = str.substring(0, str.length - 1);
