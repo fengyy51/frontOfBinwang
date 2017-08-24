@@ -215,6 +215,7 @@ $(document).ready(function(){
                         document.getElementById("btn").style.backgroundColor="#C0C0C0";
                         document.styleSheets[1].insertRule("#btn:before{position:absolute;display:block;content:'';left:24%;top:-45%;border-width:"+0.05*window.screen.width+"px;border-style:solid;border-color:transparent;border-bottom-color:#C0C0C0;}",0);
                         //灰色按钮
+                        $('#btn').attr("disabled",true);
                         // btn.onclick = function(){
                             alertNew("今日抽奖次数已用完!");
                             alertShow();
@@ -228,9 +229,11 @@ $(document).ready(function(){
                     document.getElementById("btn").style.backgroundColor="#C0C0C0";
                     document.styleSheets[1].insertRule("#btn:before{position:absolute;display:block;content:'';left:24%;top:-45%;border-width:"+0.05*window.screen.width+"px;border-style:solid;border-color:transparent;border-bottom-color:#C0C0C0;}",0);
                     //灰色按钮
+                    $('#btn').attr("disabled",true);
+                    var msg=response.data.msg;
                     // btn.onclick = function(){
-                        alertNew("今日抽奖次数已用完!");
-                        alertShow();
+                    alertNew(msg);
+                    alertShow();
                     // }
                 }
                 else if(response.code==500){
@@ -340,7 +343,12 @@ $(document).ready(function(){
                                     window.location.href="../../personal/page/prize?id="+id;//页面跳转语句
                                 }
                                 else if(temper.code==500){
-                                    console.log(temper.error.msg);
+                                    document.getElementById("btn").style.backgroundColor="#C0C0C0";
+                                    document.styleSheets[1].insertRule("#btn:before{position:absolute;display:block;content:'';left:24%;top:-45%;border-width:"+0.05*window.screen.width+"px;border-style:solid;border-color:transparent;border-bottom-color:#C0C0C0;}",0);
+                                    //灰色按钮
+                                    $('#btn').attr("disabled",true);
+                                    alertNew(temper.error.msg);
+                                    alertShow();
                                 }
                             },
                             error:function(){
