@@ -1,0 +1,23 @@
+{
+  "alert.js": "alert.js?v=e754f998c4",
+  "dow.js": "dow.js?v=da1d3eb9c3",
+  "global.js": "global.js?v=781352e597",
+  "jquery-3.2.1.js": "jquery-3.2.1.js?v=a5a8ab0a7c",
+  "jweixin-1.0.0.js": "jweixin-1.0.0.js?v=ae4fe26a2c",
+  "listWork.js": "listWork.js?v=76e459668b",
+  "personal.js": "personal.js?v=84a3b21e19",
+  "prize.js": "prize.js?v=70a45e5c87",
+  "prizelist.js": "prizelist.js?v=77d03b7ec0",
+  "proof.js": "proof.js?v=6c57620986",
+  "prooflist.js": "prooflist.js?v=6ca5301569",
+  "publicAttr.js": "publicAttr.js?v=b198fe4d3d",
+  "share.js": "share.js?v=2257c8daf0",
+  "sign.js": "sign.js?v=6c57620986",
+  "signlist.js": "signlist.js?v=3d5fc9ae79",
+  "swiper-3.4.2.min.js": "swiper-3.4.2.min.js?v=fb13ef3e87",
+  "test.js": "test.js?v=0e12065be4",
+  "tishi.js": "tishi.js?v=5b232703fe",
+  "weChatId.js": "weChatId.js?v=f62293ead6",
+  "weui.min.js": "weui.min.js?v=56b2004653",
+  "zepto.js": "zepto.js?v=7645315506"
+}

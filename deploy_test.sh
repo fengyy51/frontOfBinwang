@@ -5,7 +5,7 @@ EOF
 echo "done for delete original floder"
 
 
-scp  -r /d/workspace/fe-frontOfBinwang/ root@120.27.227.32:/usr/share/nginx/fe-frontOfBinwang-test/
+scp  -r /c/workspace/fe-frontOfBinwang/dist/ root@120.27.227.32:/usr/share/nginx/fe-frontOfBinwang-test/
 # rsync -av /c/workspace/fe-frontOfBinwang/ --exclude=.git/ root@120.27.227.32:/usr/share/nginx/fe-frontOfBinwang/
 echo "done for send"
 
